@@ -37,6 +37,95 @@ header{
 /* style rule for navigation area */
 nav{
 	text-align: right;
+	padding: 1em;
+	background-color: #29aaff;
+	margin: 1em;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #000000;
+}
+
+nav ul {
+	list-style-type:none;
+	margin:0;
+	text-align: center;
+}
+
+nav li {
+	
+	text-align: center;
+	font-size: 1.5em;
+	
+}
+
+nav li:first-child {
+	border-top: none;
+}
+
+nav li a {
+	display: block;
+	color: black;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	
+}
+
+nav img {
+	padding: 0.5em 1em;
+}
+
+/* Show mobil class, hide tablet-desktop class */
+.mobile {
+	display: block;
+}
+
+.tablet-desktop {
+	display: none;
+}
+/* main style rules */
+main{
+	background-color: #29aaff;
+	text-align:center;
+	font-size:1.25em;
+	padding: 0.75em 1em;
+	margin:2em 0.75em;
+	box-shadow: 2px 2px 2px #000000;
+	
+}
+
+main h2{	
+	color:#07155C;
+}
+
+#specials img{
+	margin-left: 35%;
+}
+
+/*Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	
+	/* Tablet Viewport: Show tablet-desktop, hide mobile class */
+      .tablet-desktop{
+		display: block;
+	  }
+	
+	
+	 
+	.mobile{
+		display: none;
+	}
+	
+	/*style rule for header */
+header{
+	background-color:blue;
+	margin: 0.5em 2em;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #000000;
+	text-align:center;
+}
+	
+	/* style rule for navigation area */
+nav{
+	text-align: right;
 	padding: 0.5em;
 	background-color: #29aaff;
 	margin: 1em;
@@ -69,27 +158,74 @@ nav li a {
 nav img {
 	padding: 0.5em 1em;
 }
-/* main style rules */
-main{
-	background-color: #29aaff;
+	main ol {
+		list-style-type:upper-roman;
+		margin:0;
+		text-align: center;
+	}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+	/* Tablet Viewport: Show tablet-desktop, hide mobile class */
+      .tablet-desktop{
+		display: block;
+	  }
+	
+	
+	 
+	.mobile{
+		display: block;
+	}
+	/*style rule for header */
+header{
+	background-color:blue;
+	margin: 0.5em 2em;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #000000;
 	text-align:center;
-	font-size:1.25em;
-	padding: 0.75em 1em;
-	margin:2em 0.75em;
+}
+	
+	/* style rule for navigation area */
+nav{
+	text-align: right;
+	padding: 0.5em;
+	background-color: #29aaff;
+	margin: 1em;
+	border-radius: 10px;
 	box-shadow: 2px 2px 2px #000000;
+}
+
+nav ul {
+	list-style-type:none;
+	margin:0;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	text-align: center;
+	font-size: 1.5em;
 	
 }
 
-main h2{
-	color:#07155C;
+nav li a {
+	display: block;
+	color: black;
+	text-align:center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	
 }
 
-
-#video{
-	margin-bottom: 3.5em ;
+nav img {
+	padding: 0.5em 1em;
 }
-#specials img{
-	margin-left: 35%;
+	main ol {
+		list-style-type:upper-roman;
+		margin:0;
+		text-align: center;
+	}
 }
 /* style rule for footer */
 footer p{
